@@ -26,7 +26,8 @@ namespace GUI.GUI_GiaoVien
             dgvKetQua.DataSource = BUS_KetQua.Instance.hienthi(maGV);
             DataTable table = BUS_KetQua.Instance.hienThiHocSinhCuaGV(maGV);
             cbbMaHS.DataSource = table;
-            cbbMaHS.DisplayMember = "MaHS";
+            cbbMaHS.DisplayMember = "TenHS";
+            cbbMaHS.ValueMember = "MaHS";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -38,29 +39,33 @@ namespace GUI.GUI_GiaoVien
         private void dgvKetQua_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int d = e.RowIndex;
-            txtNamHoc.Text = dgvKetQua.Rows[d].Cells[0].Value.ToString();
-            if((bool)dgvKetQua.Rows[d].Cells[2].Value == true)
+            if (d > -1)
             {
-                rbKy1.Checked = true;
+                txtNamHoc.Text = dgvKetQua.Rows[d].Cells[0].Value.ToString();
+                if ((bool)dgvKetQua.Rows[d].Cells[2].Value == true)
+                {
+                    rbKy1.Checked = true;
+                }
+                else
+                {
+                    rbKy2.Checked = true;
+                }
+                cbbMaHS.Text = dgvKetQua.Rows[d].Cells[1].Value.ToString();
+                txtToan.Text = dgvKetQua.Rows[d].Cells[3].Value.ToString();
+                txtVatLy.Text = dgvKetQua.Rows[d].Cells[4].Value.ToString();
+                txtHoa.Text = dgvKetQua.Rows[d].Cells[5].Value.ToString();
+                txtVan.Text = dgvKetQua.Rows[d].Cells[6].Value.ToString();
+                txtAnh.Text = dgvKetQua.Rows[d].Cells[7].Value.ToString();
+                txtLichSu.Text = dgvKetQua.Rows[d].Cells[8].Value.ToString();
+                txtDiaLy.Text = dgvKetQua.Rows[d].Cells[9].Value.ToString();
+                txtGDCD.Text = dgvKetQua.Rows[d].Cells[10].Value.ToString();
+                txtTheDuc.Text = dgvKetQua.Rows[d].Cells[11].Value.ToString();
+                txtCongNghe.Text = dgvKetQua.Rows[d].Cells[12].Value.ToString();
+                txtSinhHoc.Text = dgvKetQua.Rows[d].Cells[13].Value.ToString();
+                txtHanhKiem.Text = dgvKetQua.Rows[d].Cells[14].Value.ToString();
+                txtNhanXet.Text = dgvKetQua.Rows[d].Cells[15].Value.ToString();
             }
-            else
-            {
-                rbKy2.Checked = true;
-            }
-            cbbMaHS.Text = dgvKetQua.Rows[d].Cells[1].Value.ToString();
-            txtToan.Text = dgvKetQua.Rows[d].Cells[3].Value.ToString();
-            txtVatLy.Text = dgvKetQua.Rows[d].Cells[4].Value.ToString();
-            txtHoa.Text = dgvKetQua.Rows[d].Cells[5].Value.ToString();
-            txtVan.Text = dgvKetQua.Rows[d].Cells[6].Value.ToString();
-            txtAnh.Text = dgvKetQua.Rows[d].Cells[7].Value.ToString();
-            txtLichSu.Text = dgvKetQua.Rows[d].Cells[8].Value.ToString();
-            txtDiaLy.Text = dgvKetQua.Rows[d].Cells[9].Value.ToString();
-            txtGDCD.Text = dgvKetQua.Rows[d].Cells[10].Value.ToString();
-            txtTheDuc.Text = dgvKetQua.Rows[d].Cells[11].Value.ToString();
-            txtCongNghe.Text = dgvKetQua.Rows[d].Cells[12].Value.ToString();
-            txtSinhHoc.Text = dgvKetQua.Rows[d].Cells[13].Value.ToString();
-            txtHanhKiem.Text = dgvKetQua.Rows[d].Cells[14].Value.ToString();
-            txtNhanXet.Text = dgvKetQua.Rows[d].Cells[15].Value.ToString();
+            
         }
 
         private void btnThem_Click(object sender, EventArgs e)

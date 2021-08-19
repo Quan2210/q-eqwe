@@ -92,6 +92,7 @@ namespace GUI.GUI_Admin
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FAdmin_FormClosed);
+            this.Load += new System.EventHandler(this.FAdmin_Load);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.ResumeLayout(false);

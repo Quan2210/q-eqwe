@@ -33,14 +33,14 @@ namespace GUI.GUI_GiaoVien
         }
         private void mnuQuanLyHocSinh_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            new FQuanLyHocSinh(maGiaoVien).ShowDialog();
+            this.Hide();
+            new FQuanLyHocSinh(maGiaoVien).Show();
         }
 
         private void mnuQuanLyKetQuaHocTap_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            new FQuanLyKetQuaHocTap(maGiaoVien).ShowDialog();
+            this.Hide();
+            new FQuanLyKetQuaHocTap(maGiaoVien).Show();
         }
 
         private void mnuDoiMatKhau_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace GUI.GUI_GiaoVien
         {
             if (MessageBox.Show("Bạn có muốn đăng xuất không? ", "Đăng xuất", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                this.Dispose();
+                this.Hide();
                 FDangNhap.Instance.Show();
             }
         }

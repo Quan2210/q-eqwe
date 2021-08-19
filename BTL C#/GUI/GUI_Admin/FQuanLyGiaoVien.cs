@@ -128,19 +128,22 @@ namespace GUI.GUI_Admin
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            new FAdmin().Show();
+            new FAdmin().ShowDialog();
         }
 
         private void dgvDanhSachGiaoVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
-            dgvDanhSachGiaoVien.CurrentRow.Selected = true;
-            txtMaGiaoVien.Text = dgvDanhSachGiaoVien.Rows[row].Cells[0].Value.ToString();
-            txtTenGiaoVien.Text = dgvDanhSachGiaoVien.Rows[row].Cells[1].Value.ToString();
-            txtDiaChi.Text = dgvDanhSachGiaoVien.Rows[row].Cells[2].Value.ToString();
-            txtSoDienThoai.Text = dgvDanhSachGiaoVien.Rows[row].Cells[3].Value.ToString();
-            txtEmail.Text = dgvDanhSachGiaoVien.Rows[row].Cells[4].Value.ToString();
-            txtMatKhau.Text = dgvDanhSachGiaoVien.Rows[row].Cells[5].Value.ToString();
+            if(row > -1)
+            {
+                dgvDanhSachGiaoVien.CurrentRow.Selected = true;
+                txtMaGiaoVien.Text = dgvDanhSachGiaoVien.Rows[row].Cells[0].Value.ToString();
+                txtTenGiaoVien.Text = dgvDanhSachGiaoVien.Rows[row].Cells[1].Value.ToString();
+                txtDiaChi.Text = dgvDanhSachGiaoVien.Rows[row].Cells[2].Value.ToString();
+                txtSoDienThoai.Text = dgvDanhSachGiaoVien.Rows[row].Cells[3].Value.ToString();
+                txtEmail.Text = dgvDanhSachGiaoVien.Rows[row].Cells[4].Value.ToString();
+                txtMatKhau.Text = dgvDanhSachGiaoVien.Rows[row].Cells[5].Value.ToString();
+            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

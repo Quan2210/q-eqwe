@@ -59,5 +59,40 @@ namespace GUI
 
 
         }
+
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                if (txtUsername.Text.Equals("admin") && txtPass.Text.Equals("admin"))
+                {
+                    FAdmin admin = new FAdmin();
+                    admin.Show();
+                    this.Hide();
+                }
+                else if (BUS_GiaoVien.Instance.checkTaiKhoanGiaoVien(txtUsername.Text, txtPass.Text))
+                {
+                    FGiaoVien giaoVien = new FGiaoVien(txtUsername.Text);
+                    giaoVien.Show();
+                    this.Hide();
+                }
+                else if (BUS_HocSinh.Instance.checkTaiKhoanHocSinh(txtUsername.Text, txtPass.Text))
+                {
+                    FThongTinHocSinh hocSinh = new FThongTinHocSinh(txtUsername.Text);
+                    hocSinh.Show();
+                    this.Hide();
+                }
+                else
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Đăng nhập thất bại", MessageBoxButtons.OK);
+            }
+        }
+
+        private void FDangNhap_Load(object sender, EventArgs e)
+        {
+            txtUsername.Text.Equals("");
+            txtPass.Text.Equals("");
+            txtUsername.Focus();
+            txtUsername.Text = "";
+        }
     }
 }

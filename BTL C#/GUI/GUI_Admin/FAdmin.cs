@@ -23,33 +23,38 @@ namespace GUI.GUI_Admin
         {
             if (MessageBox.Show("Bạn có muốn đăng xuất không? ", "Đăng xuất", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                this.Dispose();
+                this.Hide();
                 FDangNhap.Instance.Show();
             }
         }
 
         private void mnuQuanLyGiaoVien_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             new FQuanLyGiaoVien().Show();
         }
 
         private void mnuQuanLyHocSinh_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             FQuanLyHocSinh qlHocSinh = new FQuanLyHocSinh("admin");
-            qlHocSinh.ShowDialog();
+            qlHocSinh.Show();
         }
 
         private void mnuQuanLyLop_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            new FQuanLyLop().ShowDialog();
+            this.Hide();
+            new FQuanLyLop().Show();
         }
 
         private void FAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

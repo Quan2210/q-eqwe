@@ -62,7 +62,7 @@ namespace GUI.GUI_HocSinh
 
         private void mnuXemKetQuaHocTap_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             new FXemKetQuaHocTap(maHocSinh).Show();
         }
 
@@ -70,7 +70,7 @@ namespace GUI.GUI_HocSinh
         {
             if(MessageBox.Show("Bạn có muốn đăng xuất không?","Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                this.Dispose();
+                this.Hide();
                 FDangNhap.Instance.Show();
             }
         }

@@ -1,0 +1,9 @@
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\bin\Debug\DAL.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\bin\Debug\DAL.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\bin\Debug\DTO.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\bin\Debug\DTO.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\obj\Debug\DAL.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DAL\obj\Debug\DAL.pdb

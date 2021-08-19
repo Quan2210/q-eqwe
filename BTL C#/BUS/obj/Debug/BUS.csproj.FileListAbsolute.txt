@@ -1,0 +1,12 @@
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\BUS.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\BUS.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\DAL.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\DTO.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\DAL.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\bin\Debug\DTO.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.csproj.ResolveComReference.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\BUS\obj\Debug\BUS.pdb

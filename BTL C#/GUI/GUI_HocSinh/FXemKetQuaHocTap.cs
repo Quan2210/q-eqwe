@@ -21,7 +21,7 @@ namespace GUI.GUI_HocSinh
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             new FThongTinHocSinh(maHocSinh).Show();
         }
 
@@ -86,7 +86,7 @@ namespace GUI.GUI_HocSinh
 
         private void btnQuayLai_Click_1(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             new FThongTinHocSinh(maHocSinh).Show();
         }
     }

@@ -142,7 +142,7 @@ namespace GUI.GUI_GiaoVien
             // 
             this.cbbMaHS.FormattingEnabled = true;
             this.cbbMaHS.Location = new System.Drawing.Point(163, 63);
-            this.cbbMaHS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbMaHS.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMaHS.Name = "cbbMaHS";
             this.cbbMaHS.Size = new System.Drawing.Size(193, 24);
             this.cbbMaHS.TabIndex = 1;
@@ -151,7 +151,7 @@ namespace GUI.GUI_GiaoVien
             // 
             this.rbKy2.AutoSize = true;
             this.rbKy2.Location = new System.Drawing.Point(884, 63);
-            this.rbKy2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbKy2.Margin = new System.Windows.Forms.Padding(4);
             this.rbKy2.Name = "rbKy2";
             this.rbKy2.Size = new System.Drawing.Size(57, 21);
             this.rbKy2.TabIndex = 13;
@@ -163,7 +163,7 @@ namespace GUI.GUI_GiaoVien
             // 
             this.rbKy1.AutoSize = true;
             this.rbKy1.Location = new System.Drawing.Point(749, 62);
-            this.rbKy1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbKy1.Margin = new System.Windows.Forms.Padding(4);
             this.rbKy1.Name = "rbKy1";
             this.rbKy1.Size = new System.Drawing.Size(57, 21);
             this.rbKy1.TabIndex = 12;
@@ -467,7 +467,7 @@ namespace GUI.GUI_GiaoVien
             // btnInExcel
             // 
             this.btnInExcel.Location = new System.Drawing.Point(588, 17);
-            this.btnInExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnInExcel.Name = "btnInExcel";
             this.btnInExcel.Size = new System.Drawing.Size(100, 28);
             this.btnInExcel.TabIndex = 20;
@@ -571,7 +571,7 @@ namespace GUI.GUI_GiaoVien
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.RadioButton rbKy2;
         private System.Windows.Forms.RadioButton rbKy1;
-        private System.Windows.Forms.ComboBox cbbMaHS;
         private System.Windows.Forms.Button btnInExcel;
+        private System.Windows.Forms.ComboBox cbbMaHS;
     }
 }

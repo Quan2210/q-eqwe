@@ -111,7 +111,18 @@ namespace BUS
                  {
                      for (int j = 0; j < dgr.Columns.Count; ++j)
                      {
-                         ws.Cells[i + 2, j + 1] = dgr.Rows[i].Cells[j].Value.ToString();
+                        if(dgr.Rows[i].Cells[j].Value.ToString() == "True")
+                        {
+                            ws.Cells[i + 2, j + 1] = "1";
+                        }
+                        else if (dgr.Rows[i].Cells[j].Value.ToString() == "False")
+                        {
+                            ws.Cells[i + 2, j + 1] = "2";
+                        }
+                        else
+                        {
+                            ws.Cells[i + 2, j + 1] = dgr.Rows[i].Cells[j].Value.ToString();
+                        }
                      }
                  }
                  ws.Columns.AutoFit();

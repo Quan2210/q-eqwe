@@ -1,0 +1,6 @@
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\bin\Debug\DTO.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\bin\Debug\DTO.pdb
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\obj\Debug\DTO.dll
+D:\SubjectUniversity\Ki 7\C#\BTL_Exp\BTL_C#\BTL C#\DTO\obj\Debug\DTO.pdb

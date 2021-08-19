@@ -46,11 +46,12 @@ namespace GUI.GUI_HocSinh
                         {
                             txtMatKhauMoi.Clear();
                             txtXacNhanMatKhauMoi.Clear();
-                            throw new Exception("Mật khẩu không khớp!Vui lòng nhập lại!");
+                            throw new Exception("Mật khẩu không khớp! Vui lòng nhập lại!");
                         }
                         else
                         {
                             BUS_HocSinh.Instance.capNhatMatKhauHS(ma, matKhauMoi);
+                            MessageBox.Show("Đổi mật khẩu thành công!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Close();
                         }
                     }
@@ -60,11 +61,12 @@ namespace GUI.GUI_HocSinh
                         {
                             txtMatKhauMoi.Clear();
                             txtXacNhanMatKhauMoi.Clear();
-                            throw new Exception("Mật khẩu không khớp!Vui lòng nhập lại!");
+                            throw new Exception("Mật khẩu không khớp! Vui lòng nhập lại!");
                         }
                         else
                         {
                             BUS_GiaoVien.Instance.updateMatKhau(ma, matKhauMoi);
+                            MessageBox.Show("Đổi mật khẩu thành công!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             this.Close();
                         }
                     }

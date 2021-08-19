@@ -62,7 +62,7 @@ create table KetQua(
   SinhHoc    float,
   HanhKiem  varchar(10),
   NhanXetGV     nvarchar(200)
-)
+)select* from KetQua
 ------ Themm bot diem
 -- Học sinh(MK), Giáo viên(MK), admin
 -- Lop
@@ -120,7 +120,7 @@ values (2021, 'HS02', 1, 8,8,8,8,8,8,8,8,8,8,8,N'Khá', N'Có sự cố gắng, 
 insert into KetQua
 values (2021, 'HS03', 1, 8,8,8,8,8,8,8,8,8,8,8,N'Khá', N'Có sự cố gắng, chăm học')
 insert into KetQua
-values (2021, 'HS04', 0, 8,8,8,8,8,8,8,8,8,8,8,N'Khá', N'Có sự cố gắng, chăm học')
+values (2021, 'HS05', 0, 8,8,8,8,8,8,8,8,8,8,8,N'Khá', N'Có sự cố gắng, chăm học')
 select * from KetQua
 delete KetQua where MaHS = 'HS04'
 -- trigger xóa Học Sinh

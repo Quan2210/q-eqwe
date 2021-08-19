@@ -24,7 +24,7 @@ namespace DAL
             }
         }
         private dataProvider() { }
-        string connectionString = @"Data Source=TÂN\SQLEXPRESS;Initial Catalog=HocSinhTrungHoc;Integrated Security=True"; // địa chỉ đường dẫn liên kết SQL
+        string connectionString = @"Data Source=.\SqlExpress;Initial Catalog=HocSinhTrungHoc;Integrated Security=True"; // địa chỉ đường dẫn liên kết SQL
         public DataTable EXcuteQuery(string query, object[] paramater = null)
         {
             DataTable table = new DataTable();

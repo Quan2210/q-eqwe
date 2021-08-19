@@ -46,7 +46,6 @@ namespace GUI.GUI_Admin
                 btnThem.Enabled = false;
                 btnXoa.Enabled = false;
             }
-
         }
 
         private void dtgHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
